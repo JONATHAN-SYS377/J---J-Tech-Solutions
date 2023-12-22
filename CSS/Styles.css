@@ -1,7 +1,7 @@
-:root{
+/* :root{
     --bs-body-color: #dee2e6;
     --bs-body-color-rgb: 222, 226, 230;
-    --bs-body-bg: #212529;
+    --bs-body-bg: #ffffff;
     --bs-body-bg-rgb: 33, 37, 41;
     --bs-emphasis-color: #fff;
     --bs-emphasis-color-rgb: 255, 255, 255;
@@ -51,8 +51,10 @@
     --bs-form-valid-border-color: #75b798;
     --bs-form-invalid-color: #ea868f;
     --bs-form-invalid-border-color: #ea868f;
-  }
-
+  } */
+:root{
+    --bs-navbar-active-color : #A100B9
+}
 
 *{
     margin: 0;
@@ -64,17 +66,218 @@ a{
 }
 
 /* ===================================================== HEADER ==================================================== */
+.Navbar-Section{
+    background-color:#090E36 ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999999;
+    padding: 0;
+    margin: 0; 
+}
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+    border: var(--bs-border-width) solid white;
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+.icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 30 30\'%3e%3cpath stroke=\'#ffffff\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' stroke-width=\'2\' d=\'M4 7h22M4 15h22M4 23h22\'/%3e%3c/svg%3e');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
 
-header{
+.header_section {
+    margin-top: 50px;
+    width: 100%;
+    float: left;
+    background-image: url(../IMAGE/banner-bg.png);
+    height: auto;
+    padding: 0px ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+/* header{
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 99999999; 
+} */
+.logo{
+	width: 100%;
+	float: left;
+	margin-top: 5px;
 }
 .sizeLogo{
-   width: 40px;
+   width: 50px;
+   height: 50px; 
+}
+.sizeName{
+    width: 250px;
    height: 40px; 
 }
-.LogoName{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.nav-link{
+    color: white;
+    font-weight: 700;
+}
+.nav-link:hover{
+    color:#A100B9;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color:#A100B9;
+}
+.top_button_section {
+
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px 0;
+}
+.login-bt{
+	width: auto; 
+	font-size: 17px;
+	color: #ffffff;
+	text-align: center;
+	background-color: transparent;
+    border: 0px;
+	border-radius: 10px;
+	height: 45px;
+    margin-left: 10px;
+    transition: background-color 0.5s ease;
+}
+.login-bt:hover{
+    background-color: #A100B9;
+}
+.search {
+    top: -8px;
+    position: relative;
+    left: -10px;
+}
+.m-r{
+    margin-right: 100px;
+}
+.conteneddor_boton_carrito{
+    margin-left: 80px;
+}
+.banner_section {
+    width: 100%;
+    float: left;
+    padding-top: 0px;
+    padding: 0;
+}
+.layout_padding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.banner_Titulo {
+    
+    width: 100%;
+    float: left;
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    padding-top: 70px;
+}
+.text_banner {
+    width: 100%;
+    float: left;
+    font-size: 17px;
+    color: #ffffff;
+    padding-left: 0;
+    margin: 10px 0 0;
+}
+.ads_bt {
+    text-decoration: none;
+    width: 35%;
+    float: left;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #A100B9;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 9px;
+    transition: background-color 0.5s ease;
+    border: 1px solid #D71E95;
+}
+
+.ads_bt:hover{ 
+    background-color: #D71E95;
+    color: #ffffff;
+    border: 1px solid  white;
+ }
+
+.contact_bt{
+	width: 35%;
+    text-decoration: none;
+	float: left;
+	height: 50px;
+	font-size: 18px;
+	color: #0a0808;
+	background-color: #ffffff;
+	border-radius: 30px;
+	margin-left: 20px;
+	margin-top: 30px;
+    text-align: center;
+    padding-top: 9px;
+}
+.contact_bt a{  color: #0a0808}
+.contact_bt a:hover{ color: #000; }
+
+.espacio{
+    padding-right: 3rem!important;
+    padding-left: 3rem!important;
+}
+.espacio-4{
+    padding: 1.5rem!important;
+}
+.margin-1{
+    margin-top: 0.25rem!important;
+}
+.espacio-2{
+    padding: 0.5rem!important;
+}
+.margin-t-3{
+    margin-top: 1rem!important;
+}
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+    .sizeName{
+    display: none; 
+     }
+     .header_section {
+        margin-top: 75px;
+     }
+     .banner_Titulo{
+        font-size: 15px;
+     }
+
+
+}
+@media only screen and (min-width: 599px) and (max-width: 767px) {
+    
+}
+/* =================================== CUERPO ==================================================== */
+.about_section{
+	width: 100%;
+	float: left;
+	background-image: url(../IMAGE/about-bg.png);
+	height: auto;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding-bottom: 245px;
 }
