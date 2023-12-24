@@ -281,3 +281,10 @@ a{
 	background-repeat: no-repeat;
 	padding-bottom: 245px;
 }
+/* Footer styles */
+.home-footer{
+    background-color: #090E36;
+}
+.home-footer div a{
+    text-decoration:none !important;
+}
