@@ -373,11 +373,54 @@ a{
 }
 /* =================================== CUERPO ==================================================== */
 .about_section{
-	width: 100%;
-	float: left;
+	width: 100%; 
 	background-image: url(../IMAGE/about-bg.png);
 	height: auto;
-	background-size: 100%;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
+    margin: 25px 0px;
 	padding-bottom: 245px;
+}
+
+
+
+
+
+
+
+.home-footer{
+    background-color: #090E36;
+}
+.home-footer div a{
+    text-decoration:none !important;
+}
+.text-Enlaces{
+color: white  ;
+transition: color 0.5s ease;
+}
+.text-Enlaces:hover{
+color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1)); ;
+}
+.sizeNamefooter{
+    width: 250px;
+   height: 40px; 
+}
+.bxl-whatsapp .bxl-instagram .bxl-facebook{
+    color: rgb(255, 255, 255);
+    transition: color 0.5s ease;
+
+}
+.bxl-whatsapp:hover{
+    color: green;
+    transition: color 0.5s ease;
+}
+
+.bxl-instagram:hover{
+   color: rgb(198, 61, 61); 
+   transition: color 0.5s ease;
+}
+
+.bxl-facebook:hover{
+    color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+    transition: color 0.5s ease;
 }
