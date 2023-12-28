@@ -63,7 +63,7 @@ a{
 
 /* ===================================================== HEADER ==================================================== */
 .Navbar-Section{
-    background-color:#090E36 ;
+    background: linear-gradient(to left, #081831,#081831, #060F20, #000000,#000000);
     position: fixed;
     top: 0;
     width: 100%;
@@ -92,11 +92,11 @@ a{
     background-size: 100%;
 }
 
-.header_section {
+.carousel1 {
     margin-top: 75px;
     width: 100%;
-    height: 350px;
-    background-image: url(../IMAGE/banner-bg.png);
+    height: 400px;
+    background-image: url(../IMAGE/Carrusel/vecteezy_blue-abstract-technology-hitech-backgroundcircuit_8952080.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     min-height: 88vh;
@@ -215,7 +215,7 @@ a{
 .contact_bt{
 	width: 35%;
     text-decoration: none;
-	float: left;
+	float: right;
 	height: 50px;
 	font-size: 18px;
 	color: #0a0808;
@@ -229,6 +229,40 @@ a{
 .ImagenCarrucel{
     width: 100%;
     height: 80%;
+}
+.ImagenCarrucel2{
+    margin-top: 50px;
+    width: 90%;
+    height: 80%;
+}
+.ImagenCarrucel3{
+    margin-top: 87px;
+    width: 100%;
+    height: 80%;
+}
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7%;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+.carousel-control-prev-icon {
+    background-image: url(/IMAGE/SVG/circle-chevron-left-solid.svg);
+}
+.carousel-control-next-icon{
+    background-image: url(/IMAGE/SVG/circle-chevron-right-solid.svg);
+ 
 }
 .contact_bt a{  color: #0a0808}
 .contact_bt a:hover{ color: #000; }
@@ -263,10 +297,11 @@ a{
     display: none; 
      }
 
-     .header_section {
+     .carousel {
+        background-image: url(/IMAGE/Carrusel/vecteezy_blue-abstract-technology-hitech-backgroundcircuit_8952080.jpg);
         margin-top: 45px;
-        height: 440px;
-        min-height: auto;
+        height: 450px;
+        min-height: 100%;
      }
      .banner_Titulo{
         font-size: 15px;
@@ -316,15 +351,35 @@ a{
         width: 100%;
         height: 60%;
     }
+    .ImagenCarrucel2{
+        margin-top: 25px;
+        width: 90%;
+        height: 60%;
+        margin-left: 18px;
+    }
+    .ImagenCarrucel3{
+        margin-top: 50px;
+        width: 90%;
+        height: 70%;
+        margin-left: 18px;
+    }
+    .carousel-control-next, .carousel-control-prev {
+
+        width: 8%;
+        margin-right: 10px;
+        margin-left: 10px;
+        
+    }
 }
 @media only screen and (min-width: 599px) and (max-width: 1024px) {
     .sizeName{
         display: none; 
          }
     
-         .header_section {
+         .carousel {
             margin-top: 60px;
-            min-height: auto;
+            height: 350px;
+            min-height: 100%;
          }
          .banner_Titulo{
             font-size: 15px;
@@ -370,6 +425,22 @@ a{
             font-size: 18px;
             font-weight: 700;
         }
+        .ImagenCarrucel{
+            width: 100%;
+            height: 60%;
+        }
+        .ImagenCarrucel2{
+            margin-top: 0px;
+            width: 90%;
+            height: 80%;
+            margin-left: 18px;
+        }
+        .ImagenCarrucel3{
+            margin-top: 30px;
+            width: 85%;
+            height: 85%;
+            margin-left: 18px;
+        }
 }
 /* =================================== CUERPO ==================================================== */
 .about_section{
@@ -381,6 +452,131 @@ a{
     margin: 25px 0px;
 	padding-bottom: 245px;
 }
+.header_section{
+    margin-top: 75px;
+    width: 100%;
+    height: 450px;
+   
+    background-image: url(../IMAGE/Header-html/vecteezy_blue-abstract.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+.Imgbanner{
+    margin-top: 40px;
+    width: 100%;
+    height: 105%;
+}
+.carousel2{
+    margin-top: 75px;
+    width: 100%;
+    height: 260px;
+    background-image: url(../IMAGE/Header-html/vecteezy_blue-abstract.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   
+}
+.ImagenCarrucelTienda{
+    height: 300px;
+    width: 100%;
+    margin-top: -20px;
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+    .header_section{
+        margin-top: 70px;
+        width: 100%;
+        height: 250px;   
+    }
+    .Imgbanner{
+        margin-top: 45px;
+        width: 100%;
+        height: 90%;
+    }
+    .ImagenCarrucelTienda{
+        height: 250px;
+        width: 95%;
+        margin-top: -20px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 599px) and (max-width: 1024px) {
+    .header_section{
+        margin-top: 75px;
+        width: 100%;
+        height: 300px;   
+    }
+    .Imgbanner{
+        margin-top: 48px;
+        width: 100%;
+        height: 90%;
+    }
+    .ImagenCarrucelTienda{
+        height: 220px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* 
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+    .header_section{
+        margin-top: 75px;
+        width: 100%;
+        height: 300px;   
+    }
+    .Imgbanner{
+        margin-top: 48px;
+        width: 100%;
+        height: 90%;
+    }
+    .ImagenCarrucelTienda{
+        height: 220px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} */
+@media only screen and (min-width: 1367px) and (max-width: 2000px) {
+    .header_section{
+        margin-top: 75px;
+        width: 100%;
+        height: 350px;   
+    }
+    .Imgbanner{
+        margin-top: 48px;
+        width: 100%;
+        height: 90%;
+    }
+    .carousel2{
+        margin-top: 75px;
+        width: 100%;
+        height: 350px;
+        background-image: url(../IMAGE/Header-html/vecteezy_blue-abstract.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+       
+    }
+    .ImagenCarrucelTienda{
+        height: 400px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -389,7 +585,7 @@ a{
 
 
 .home-footer{
-    background-color: #090E36;
+    background: linear-gradient(to left, #081831,#081831, #060F20, #000000,#000000);
 }
 .home-footer div a{
     text-decoration:none !important;
@@ -423,4 +619,11 @@ color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1)); ;
 .bxl-facebook:hover{
     color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
     transition: color 0.5s ease;
+}
+
+
+
+
+.ver-div{
+    border: 1px solid white;
 }
