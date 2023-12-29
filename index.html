@@ -13,6 +13,11 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <!-- Animate CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.css' rel='stylesheet' />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -85,8 +90,10 @@
 
   <!-- Area designated for main section -->
   <main class=" ">
+
+    <!-- SECCION DEL CARRUCEL -->
     <section>
-      <div id="carouselExampleFade" class="carousel carousel1 carousel-dark slide ">
+      <div id="carouselExampleFade" class="carousel carousel1 carousel-dark slide " data-bs-ride="carousel">
 
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -203,26 +210,186 @@
           </div>
         </div>
         <button class="carousel-control-prev" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <i class="fa-solid fa-circle-chevron-left" style="color: #ffffff;"></i>
+          <!-- <i class="fa-solid fa-circle-chevron-left" style="color: #ffffff;"></i> -->
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <i class="fa-solid fa-circle-chevron-right" style="color: #000000;"></i>
+          <!-- <i class="fa-solid fa-circle-chevron-right" style="color: #000000;"></i> -->
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </section>
-    <section class=" container">
-      <div class="container about_section layout_padding">
-        <div class="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse et culpa rem vitae magni a porro
-            exercitationem. Sapiente animi similique corrupti repudiandae enim et qui, nesciunt delectus nostrum quae?
-            Quasi?</p>
+    <!-- FIN DE SECCION DEL CARRUCEL -->
+
+    <!-- SECCION ABOUT -->
+    <section class=" container-fluid p-0 ">
+      <div class="  layout_padding2">
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-lg-5 col-md-5 col-12 ">
+              <div class="tablet"><img class="tablet-imagen" src="IMAGE/About/pc.png"></div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-12">
+              <div class="about_taital">
+                <div class="about_text">Quien es <img src="IMAGE/Nombre 2.png" class="Nombre-about" alt=""> </div>
+                <p class="dolor_text">It is a long established fact that a reader will be distracted by the readable
+                  content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                  more-or-less normal distribution of letters,</p>
+                <div class=""><a class="read_more " href="Html/Nosotros.html">Ver más</a></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- FIN DE LA SECCION ABOUT -->
+
+    <!-- SECCION QUE OFRESEMOS -->
+    <section>
+      <div class="container ">
+        <div class="layout_padding2">
+          <h2 class="image-box-title">Desarrollo <span style="color: #D71E95;">Móvil ,</span> <span style="color: #A100B9;">Web y</span> <span style="color: #BA04AC;">Desktop</span></h2>
+          <div class="row">
+            <div class="layout_padding3 border-bottom shadow-lg mt-4">
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="image-box-title">Móvil</h3>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12 pb-4  ">
+                  <div class="row ">
+                    <div class="col-12 text-center">Desarrollo Móvil en Flutter, Xamarin y React-Native</div>
+                    <div class=" col-lg-4 col-md-4 col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/flutter.png" alt="" class="Img-Lenguajes"></div>
+                    <div class=" col-lg-4 col-md-4 col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/xamarin.png" alt="" class="Img-Lenguajes"></div>
+                    <div class=" col-lg-4 col-md-4 col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/react-native.png" alt="" class="Img-Lenguajes"></div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12   ">
+                  <div class="row ">
+                    <div class="col-12 text-center">Desarrollo de aplicaciones para Android.</div>
+                    <div class="col-12 d-flex justify-content-center p-4"><img src="IMAGE/Lenguajes/android.png" alt="" class="Img-Lenguajes">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12   ">
+                  <div class="row ">
+                    <div class="col-12 text-center">
+                      Desarrollo de aplicaciones IOS.</div>
+                    <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/apple.png" alt="" class="Img-Lenguajes"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="layout_padding3 border-bottom shadow-lg mt-4">
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="image-box-title">Web</h3>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12   ">
+                  <div class="row ">
+                    <div class="col-12">Frontend en Html.</div>
+                    <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/HTML5.png" alt="" class="Img-Lenguajes"></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12   ">
+                  <div class="row ">
+                    <div class="col-12">Back-end con Javascript.</div>
+                    <div class="col-12 d-flex justify-content-center p-4"><img src="IMAGE/Lenguajes/JS.png" alt="" class="Img-Lenguajes">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12   ">
+                  <div class="row ">
+                    <div class="col-12">Desarrollo web en .NET Framework, .NET Core y NET 5.</div>
+                    <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/Net.png" alt="" class="Img-Lenguajes"></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12   ">
+                  <div class="row ">
+                    <div class="col-12">Conexión a la base de datos con Entity Framework.</div>
+                    <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/Entity.png" alt="" class="Img-Lenguajes"></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12   ">
+                  <div class="row ">
+                    <div class="col-12">Estilo de marcos en Materialize.</div>
+                    <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/Materialize.png" alt="" class="Img-Lenguajes"></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12   ">
+                  <div class="row ">
+                    <div class="col-12">Marcos de estilo en Bootstrap.</div>
+                    <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/Boostrap.png" alt="" class="Img-Lenguajes"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="layout_padding3 border-bottom shadow-lg mt-4">
+              <div class="row">
+                  <div class="col-12">
+                    <h3 class="image-box-title">Desktop</h3>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-12   ">
+                    <div class="row ">
+                      <div class="col-12">Desarrollor de software con C#.</div>
+                      <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/C.png" alt="" class="Img-Lenguajes"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12   ">
+                    <div class="row ">
+                      <div class="col-12  ">Base de datos MySql o Sql Server</div>
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12 d-flex justify-content-center p-4"><img src="IMAGE/Lenguajes/sql.png" alt="" class="Img-Lenguajes"></div>
+                        <div class="col-lg-4 col-md-4 col-12 d-flex justify-content-center p-4"><img src="IMAGE/Lenguajes/MySQL-Logo.png" alt="" class="Img-Lenguajes"></div>
+                      </div> 
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- FIN SECCION QUE OFRESEMOS -->
+
+
+
+
+
+    <!-- SECCION DEL FLOATING ACTION BUTTON -->
+    <section>
+      <div class="floating-container">
+        <div class="floating-button d-flex justify-content-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </div>
+        <div class="element-container">
+
+          <a href="tel:+50687015206"> <span class="float-element tooltip-left">
+              <i class="fa-solid fa-phone fa-shake fa-lg" style="color: #ffffff;"></i>
+              </i></a>
+          </span>
+          <span class="float-element">
+            <a href="https://wa.me/+50687015206">
+              <i class="fa-brands fa-whatsapp fa-bounce fa-lg" style="color: #ffffff;"></i>
+            </a>
+            </i>
+          </span>
+          <span class="float-element">
+            <a href="mailto:info@connectcrtours.com">
+              <i class="fa-solid fa-envelope fa-fade fa-lg" style="color: #ffffff;"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION DEL FLOATING ACTION BUTTON  -->
+
   </main>
   <!--  End of main section  -->
 
@@ -350,10 +517,11 @@
   <!--  End of footer section  -->
 
   <!--===========================================================================================-->
+  <script src="JS/Query.js"></script>
+  <script src="https://kit.fontawesome.com/53c1f003df.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>

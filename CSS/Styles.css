@@ -452,6 +452,98 @@ a{
     margin: 25px 0px;
 	padding-bottom: 245px;
 }
+.tablet {
+    width: 100%;
+    float: left;
+    margin-top: 0px;
+    background: linear-gradient(to left, #081831,#081831, #060F20, #000000,#000000);
+    border-radius: 100%;
+    box-shadow: 3px 1px 12px 3px #000008;
+}
+.tablet-imagen{
+    width: 100%;
+    height: 100%;
+     
+}
+.layout_padding2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.layout_padding3 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.about_text{
+	width: 60%;
+	float: right;
+	font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #090807;
+	font-weight: 500;
+	text-align: right;
+	border-bottom: 1px solid #000;
+}
+.Nombre-about{
+    margin-top: -30px;
+}
+.dolor_text {
+    width: 100%;
+    float: left;
+    font-size: 17px;
+    color: #030303;
+    text-align: right;
+    font-weight: 500;
+    padding-top: 10px;
+    margin-left: 0px;
+}
+
+.read_more{
+	width: 30%;
+	float: right;
+	height: 50px;
+	font-size: 18px;
+	color: #ffffff;
+    background: linear-gradient(to left, #081831,#081831, #060F20, #000000,#000000);
+	border-radius: 30px;
+	margin-top: 30px;
+	text-align: center;
+	font-weight: 500;
+    padding-top: 9px;
+    transition: background-color 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.read_more:hover{ 
+    
+    background: #BA04AC; 
+}
+
+.image-box-title {
+	box-sizing: border-box;
+	color: #090E36;
+	font-family: Montserrat, sans-serif;
+	font-size: 55px;
+	font-weight: 700;
+	line-height: 66px;
+	margin: 0px 0px 20px;
+	text-align: center;
+	word-wrap: break-word;
+}
+.box-img-lenguaje{
+    border: 1px solid black;
+}
+.Img-Lenguajes{
+    margin: auto;
+	width: 120px;
+    height: 100px;
+	box-sizing: border-box;
+    overflow: clip;
+	vertical-align: middle;
+}
+
+
+
+
 .header_section{
     margin-top: 75px;
     width: 100%;
@@ -500,6 +592,20 @@ a{
         margin-top: -20px;
         margin-left: 10px;
     }
+    .about_text{
+        width: 100%;
+        float: right;
+        font-size: 40px;
+        color: #090807;
+        font-weight: 500;
+        text-align: right;
+        border-bottom: 1px solid #000;
+        
+    }
+    .Nombre-about{
+        margin-top: -30px;
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 599px) and (max-width: 1024px) {
@@ -519,9 +625,177 @@ a{
         margin-left: auto;
         margin-right: auto;
     }
+    .about_text{
+        width: 88%;
+        float: right;
+        font-size: 45px;
+        color: #090807;
+        font-weight: 500;
+        text-align: right;
+        border-bottom: 1px solid #000;
+    }
+    .Nombre-about{
+        margin-top: -30px;
+        width: 100%;
+    }
 }
-/* 
-@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+
+
+
+/* ============================  Floating Botton  =========================================== */
+.floating-container {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    margin: 30px -15px;
+    
+  }
+  
+  .floating-container:hover {
+    height: 300px;
+  }
+  
+  .floating-container:hover .floating-button {
+    box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
+    -webkit-transform: translatey(5px);
+    transform: translatey(5px);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .floating-container:hover .element-container .float-element:nth-child(1) {
+    -webkit-animation: come-in 0.4s forwards 0.2s;
+    animation: come-in 0.4s forwards 0.2s;
+  }
+  
+  .floating-container:hover .element-container .float-element:nth-child(2) {
+    -webkit-animation: come-in 0.4s forwards 0.4s;
+    animation: come-in 0.4s forwards 0.4s;
+  }
+  
+  .floating-container:hover .element-container .float-element:nth-child(3) {
+    -webkit-animation: come-in 0.4s forwards 0.6s;
+    animation: come-in 0.4s forwards 0.6s;
+  }
+  
+  .floating-container .floating-button {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: #A100B9;
+    bottom: 0;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    line-height: 65px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    z-index: 100;
+    box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .floating-container .floating-button svg {
+    fill: white; /* Color del icono */
+}
+
+  .floating-container .float-element {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 15px auto;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    z-index: 0;
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  
+  .floating-container .float-element .material-icons {
+    vertical-align: middle;
+    font-size: 16px;
+  }
+  
+  .floating-container .float-element:nth-child(1) {
+    background: #42A5F5;
+    box-shadow: 0 20px 20px -10px rgba(66, 165, 245, 0.5);
+  }
+  
+  .floating-container .float-element:nth-child(2) {
+    background: #4CAF50;
+    box-shadow: 0 20px 20px -10px rgba(76, 175, 80, 0.5);
+  }
+  
+  .floating-container .float-element:nth-child(3) {
+    background: #FF9800;
+    box-shadow: 0 20px 20px -10px rgba(255, 152, 0, 0.5);
+  }
+  @-webkit-keyframes come-in {
+    0% {
+      -webkit-transform: translatey(100px);
+      transform: translatey(100px);
+      opacity: 0;
+    }
+  
+    30% {
+      -webkit-transform: translateX(-50px) scale(0.4);
+      transform: translateX(-50px) scale(0.4);
+    }
+  
+    70% {
+      -webkit-transform: translateX(0px) scale(1.2);
+      transform: translateX(0px) scale(1.2);
+    }
+  
+    100% {
+      -webkit-transform: translatey(0px) scale(1);
+      transform: translatey(0px) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes come-in {
+    0% {
+      -webkit-transform: translatey(100px);
+      transform: translatey(100px);
+      opacity: 0;
+    }
+  
+    30% {
+      -webkit-transform: translateX(-50px) scale(0.4);
+      transform: translateX(-50px) scale(0.4);
+    }
+  
+    70% {
+      -webkit-transform: translateX(0px) scale(1.2);
+      transform: translateX(0px) scale(1.2);
+    }
+  
+    100% {
+      -webkit-transform: translatey(0px) scale(1);
+      transform: translatey(0px) scale(1);
+      opacity: 1;
+    }
+  }
+/* ========================== FIN CONTENEDOR FLOTANTE DE LOS FLOATING ACTION BOTON ============================================ */
+
+
+
+/*@media only screen and (min-width: 1025px) and (max-width: 1366px) {
     .header_section{
         margin-top: 75px;
         width: 100%;
