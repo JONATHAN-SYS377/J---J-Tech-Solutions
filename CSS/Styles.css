@@ -107,6 +107,22 @@ a{
     width: 100%;
     z-index: 99999999; 
 } */
+.steps-section h5{
+     font-weight: 700;
+}
+.step-icon{
+    border-radius: 50%;
+    background-color: #C1C1C1;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    padding-top: 3px;
+    transform: scale(0.7);
+    opacity: 70%;
+    position:relative;
+    right: 4px;
+}
+
 .logo{
 	width: 100%;
 	float: left;
@@ -482,6 +498,17 @@ a{
 	font-weight: 500;
 	text-align: right;
 	border-bottom: 1px solid #000;
+}
+.step_text{
+	width: 60%;
+	float: left;
+	font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #090807;
+	font-weight: 500;
+	text-align: left;
+	border-bottom: 1px solid #000;
+    padding-bottom: 6px;
 }
 .Nombre-about{
     margin-top: -30px;
