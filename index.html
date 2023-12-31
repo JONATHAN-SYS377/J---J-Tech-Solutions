@@ -14,11 +14,13 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
   <!-- Animate CSS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.css' rel='stylesheet' />
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <!-- Boxicons-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Boxicons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Agrega la biblioteca Swiper.js -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 </head>
 
 <body>
@@ -235,7 +237,11 @@
             <div class="col-lg-7 col-md-7 col-12">
               <div class="about_taital">
                 <div class="about_text">Quien es <img src="IMAGE/Nombre 2.png" class="Nombre-about" alt=""> </div>
-                <p class="dolor_text">Somos un grupo de profesionales apasionados por el desarrollo de software, comprometidos en ofrecer soluciones tecnológicas a medida para nuestros clientes. Nos especializamos en la creación, desarrollo e implementación de aplicaciones web, aplicaciones móviles, sitios web, así como en la venta de componentes tecnológicos y la instalación de cámaras de seguridad y vigilancia...</p>
+                <p class="dolor_text">Somos un grupo de profesionales apasionados por el desarrollo de software,
+                  comprometidos en ofrecer soluciones tecnológicas a medida para nuestros clientes. Nos especializamos
+                  en la creación, desarrollo e implementación de aplicaciones web, aplicaciones móviles, sitios web, así
+                  como en la venta de componentes tecnológicos y la instalación de cámaras de seguridad y vigilancia...
+                </p>
                 <div class=""><a class="read_more " href="Html/Nosotros.html">Ver más</a></div>
               </div>
             </div>
@@ -244,179 +250,218 @@
       </div>
     </section>
     <!-- FIN DE LA SECCION ABOUT -->
-        <!-- SECCION ETAPA DE CADA PROYECTO -->
-        <section class=" container-fluid p-0 steps-section">
-          <div class="  layout_padding2">
-            <div class="container-xl">
-              <div class="row">
-                <div class="col-12 pb-4 text-center">
-                  <h4 class="step_text">¿Como trabajamos?</h4>
+
+    <!-- SECCION ETAPA DE CADA PROYECTO -->
+    <section class=" container-fluid p-0 steps-section banner-etapas">
+      <div class="  layout_padding2">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 pb-4 text-center">
+              <h4 class="step_text">¿Como trabajamos?</h4>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="row ">
+                <div class="col-12 d-flex justify-content-center p-4">
+                  <i class="fa-regular fa-1 fa-2x step-icon"></i>
+                  <i class="fa-solid fa-handshake" style="font-size: 5em; color: #ffffff;"></i>
                 </div>
-                <div class="col-lg-3 col-md-4 col-12">
-                  <div class="row ">
-                    <div class="col-12 d-flex justify-content-center p-4">
-                      <i class="fa-regular fa-1 fa-2x step-icon"></i>
-                      <i class="fa-solid fa-handshake" style="font-size: 5em;"></i>
-                    </div>
-                    <div class="col-12 text-center">
-                      <h5>Requerimientos</h5>
-                      <p class="pt-2">
-                        Conforme a las necesidades del cliente, llevamos a cabo un análisis exhaustivo de los requisitos para su proyecto.
-                      </p>
-                    </div>
-                  </div>
+                <div class="col-12 text-center text-white">
+                  <h5>Requerimientos</h5>
+                  <p class="pt-2">
+                    Conforme a las necesidades del cliente, llevamos a cabo un análisis exhaustivo de los requisitos
+                    para su proyecto.
+                  </p>
                 </div>
-    
-                <div class="col-lg-3 col-md-4 col-12   ">
-                  <div class="row ">
-                    <div class="col-12 d-flex justify-content-center p-4">
-                      <i class="fa-regular fa-2 fa-2x step-icon"></i>
-                      <i class="fa-solid fa-list-check" style="font-size: 5em;"></i>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-12   ">
+              <div class="row ">
+                <div class="col-12 d-flex justify-content-center p-4">
+                  <i class="fa-regular fa-2 fa-2x step-icon"></i>
+                  <i class="fa-solid fa-list-check" style="font-size: 5em; color: #ffffff;""></i>
                     </div>
-                    <div class="col-12 text-center">
-                      <h5>Analisis</h5>
-                      <p class="pt-2">                 
-                        Trabajando en conjunto con nuestro equipo, realizamos un análisis detallado de cada una de las ideas de tu proyecto, definiendo las herramientas más apropiadas para su desarrollo.
-                      </p>
-                    </div>
-                  </div>
+                    <div class=" col-12 text-center text-white">
+                    <h5>Analisis</h5>
+                    <p class="pt-2">
+                      Trabajando en conjunto con nuestro equipo, realizamos un análisis detallado de cada una de las
+                      ideas de tu proyecto, definiendo las herramientas más apropiadas para su desarrollo.
+                    </p>
                 </div>
-    
-                <div class="col-lg-3 col-md-4 col-12   ">
-                  <div class="row ">
-                    <div class="col-12 d-flex justify-content-center p-4">
-                      <i class="fa-regular fa-3 fa-2x step-icon"></i>
-                      <i class="fa-solid fa-laptop-code" style="font-size: 5em;"></i>
-                    </div>
-                    <div class="col-12 text-center">
-                      <h5>Diseño</h5>
-                      <p class="pt-2">
-                        Diseñar un modelo personalizado que se ajuste a las necesidades y requisitos, manteniendo siempre un atractivo diseño amigable con el usuario.
-                      </p>
-                    </div>
-                  </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-12   ">
+              <div class="row ">
+                <div class="col-12 d-flex justify-content-center p-4">
+                  <i class="fa-regular fa-3 fa-2x step-icon"></i>
+                  <i class="fa-solid fa-laptop-code" style="font-size: 5em; color: #ffffff;"></i>
                 </div>
-    
-                <div class="col-lg-3 col-md-4 col-12   ">
-                  <div class="row ">
-                    <div class="col-12 d-flex justify-content-center p-4">
-                      <i class="fa-regular fa-4 fa-2x step-icon"></i>
-                      <i class="fa-solid fa-circle-check" style="font-size: 5em;"></i>
-                    </div>
-                    <div class="col-12 text-center">
-                      <h5>Calidad y Entrega</h5>
-                      <p class="pt-2">
-                        Nos aseguramos de que el producto cumpla con todos los requisitos y funciones antes de proceder con la entrega final del mismo.
-                      </p>
-                    </div>
-                  </div>
+                <div class="col-12 text-center text-white">
+                  <h5>Diseño</h5>
+                  <p class="pt-2">
+                    Diseñar un modelo personalizado que se ajuste a las necesidades y requisitos, manteniendo siempre un
+                    atractivo diseño amigable con el usuario.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-12   ">
+              <div class="row ">
+                <div class="col-12 d-flex justify-content-center p-4">
+                  <i class="fa-regular fa-4 fa-2x step-icon"></i>
+                  <i class="fa-solid fa-circle-check" style="font-size: 5em; color: #ffffff;"></i>
+                </div>
+                <div class="col-12 text-center text-white">
+                  <h5>Calidad y Entrega</h5>
+                  <p class="pt-2">
+                    Nos aseguramos de que el producto cumpla con todos los requisitos y funciones antes de proceder con
+                    la entrega final del mismo.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-    
-    
+        </div>
+      </div>
+    </section>
+    <!-- FIN SECCION ETAPA DE CADA PROYECTO -->
+
 
     <!-- SECCION QUE OFRECEMOS -->
     <section>
-      <div class="container ">
-        <div class="layout_padding2">
-          <h2 class="image-box-title">Desarrollo <span style="color: #D71E95;">Móvil ,</span> <span style="color: #A100B9;">Web y</span> <span style="color: #BA04AC;">Desktop</span></h2>
-          <div class="row">
-            <div class="layout_padding3 border-bottom shadow-lg mt-4">
-              <div class="row">
-                <div class="col-12">
-                  <h3 class="image-box-title">Móvil</h3>
-                </div>
-                <div class="col-lg-12 col-md-12 col-12 pb-4  ">
-                  <div class="row ">
-                    <div class="col-12 text-center">Desarrollo Móvil en Flutter, Xamarin y React-Native</div>
-                    <div class=" col-lg-4 col-md-4 col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/flutter.png" alt="" class="Img-Lenguajes"></div>
-                    <div class=" col-lg-4 col-md-4 col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/xamarin.png" alt="" class="Img-Lenguajes"></div>
-                    <div class=" col-lg-4 col-md-4 col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/react-native.png" alt="" class="Img-Lenguajes"></div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12   ">
-                  <div class="row ">
-                    <div class="col-12 text-center">Desarrollo de aplicaciones para Android.</div>
-                    <div class="col-12 d-flex justify-content-center p-4"><img src="IMAGE/Lenguajes/android.png" alt="" class="Img-Lenguajes">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12   ">
-                  <div class="row ">
-                    <div class="col-12 text-center">
-                      Desarrollo de aplicaciones IOS.</div>
-                    <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/apple.png" alt="" class="Img-Lenguajes"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="layout_padding3 border-bottom shadow-lg mt-4">
-              <div class="row">
-                <div class="col-12">
-                  <h3 class="image-box-title">Web</h3>
-                </div>
-                <div class="col-lg-3 col-md-4 col-12   ">
-                  <div class="row ">
-                    <div class="col-12">Frontend en Html.</div>
-                    <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/HTML5.png" alt="" class="Img-Lenguajes"></div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-12   ">
-                  <div class="row ">
-                    <div class="col-12">Back-end con Javascript.</div>
-                    <div class="col-12 d-flex justify-content-center p-4"><img src="IMAGE/Lenguajes/JS.png" alt="" class="Img-Lenguajes">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-12   ">
-                  <div class="row ">
-                    <div class="col-12">Desarrollo web en .NET Framework, .NET Core y NET 5.</div>
-                    <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/Net.png" alt="" class="Img-Lenguajes"></div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-12   ">
-                  <div class="row ">
-                    <div class="col-12">Conexión a la base de datos con Entity Framework.</div>
-                    <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/Entity.png" alt="" class="Img-Lenguajes"></div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-12   ">
-                  <div class="row ">
-                    <div class="col-12">Estilo de marcos en Materialize.</div>
-                    <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/Materialize.png" alt="" class="Img-Lenguajes"></div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-12   ">
-                  <div class="row ">
-                    <div class="col-12">Marcos de estilo en Bootstrap.</div>
-                    <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/Boostrap.png" alt="" class="Img-Lenguajes"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="layout_padding3 border-bottom shadow-lg mt-4">
-              <div class="row">
+      <div class="container-fluid ">
+        <div class="layout_padding2 ">
+          <h2 class="image-box-title">Desarrollo <span style="color: #D71E95;">Móvil ,</span> <span
+              style="color: #A100B9;">Web y</span> <span style="color: #BA04AC;">Desktop</span></h2>
+          <div class="container ">
+            <div class="row">
+              <div class="layout_padding3 border-bottom shadow-lg mt-4 br-20 ">
+                <div class="row">
                   <div class="col-12">
-                    <h3 class="image-box-title">Desktop</h3>
+                    <h3 class="image-box-title  ">Móvil</h3>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-12 pb-4  ">
+                    <div class="row ">
+                      <div class="col-12 text-center">
+                        <h6>Desarrollo Móvil en Flutter, Xamarin y React-Native</h6>
+                      </div>
+                      <div class=" col-lg-4 col-md-4 col-12 d-flex justify-content-center p-4"> <img
+                          src="IMAGE/Lenguajes/flutter.png" alt="" class="Img-Lenguajes"></div>
+                      <div class=" col-lg-4 col-md-4 col-12 d-flex justify-content-center p-4"> <img
+                          src="IMAGE/Lenguajes/xamarin.png" alt="" class="Img-Lenguajes"></div>
+                      <div class=" col-lg-4 col-md-4 col-12 d-flex justify-content-center p-4"> <img
+                          src="IMAGE/Lenguajes/react-native.png" alt="" class="Img-Lenguajes"></div>
+                    </div>
                   </div>
                   <div class="col-lg-4 col-md-4 col-12   ">
                     <div class="row ">
-                      <div class="col-12">Desarrollor de software con C#.</div>
-                      <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/C.png" alt="" class="Img-Lenguajes"></div>
+                      <div class="col-lg-12 col-md-12 col-12 text-center">
+                        <h6>Para Android y ISO</h6>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-center p-4"><img
+                          src="IMAGE/Lenguajes/android.png" alt="" class="Img-Lenguajes">
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-center p-4"> <img
+                          src="IMAGE/Lenguajes/apple.png" alt="" class="Img-Lenguajes"></div>
                     </div>
                   </div>
-                  <div class="col-lg-8 col-md-8 col-12   ">
+
+                </div>
+              </div>
+              <div class="layout_padding3 border-bottom shadow-lg mt-4 br-20 ">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="image-box-title">Web</h3>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-12   ">
                     <div class="row ">
-                      <div class="col-12  ">Base de datos MySql o Sql Server</div>
-                      <div class="row">
-                        <div class="col-lg-4 col-md-4 col-12 d-flex justify-content-center p-4"><img src="IMAGE/Lenguajes/sql.png" alt="" class="Img-Lenguajes"></div>
-                        <div class="col-lg-4 col-md-4 col-12 d-flex justify-content-center p-4"><img src="IMAGE/Lenguajes/MySQL-Logo.png" alt="" class="Img-Lenguajes"></div>
-                      </div> 
+                      <div class="col-12 text-center">
+                        <h6>Frontend en Html.</h6>
+                      </div>
+                      <div class="col-12 d-flex justify-content-center p-4 "> <img src="IMAGE/Lenguajes/HTML5.png"
+                          alt="" class="Img-Lenguajes"></div>
                     </div>
                   </div>
+                  <div class="col-lg-3 col-md-4 col-12   ">
+                    <div class="row ">
+                      <div class="col-12 text-center">
+                        <h6>Back-end con Javascript.</h6>
+                      </div>
+                      <div class="col-12 d-flex justify-content-center p-4"><img src="IMAGE/Lenguajes/JS.png" alt=""
+                          class="Img-Lenguajes">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-12   ">
+                    <div class="row ">
+                      <div class="col-12 text-center">
+                        <h6>Desarrollo web en .NET Framework, .NET Core y NET 5.</h6>
+                      </div>
+                      <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/Net.png" alt=""
+                          class="Img-Lenguajes"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-12   ">
+                    <div class="row ">
+                      <div class="col-12 text-center">
+                        <h6>Conexión a la base de datos con Entity Framework.</h6>
+                      </div>
+                      <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/Entity.png"
+                          alt="" class="Img-Lenguajes"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-1 col-12   "></div>
+                  <div class="col-lg-3 col-md-3 col-12   ">
+                    <div class="row ">
+                      <div class="col-12 text-center">
+                        <h6>Estilo de marcos en Materialize.</h6>
+                      </div>
+                      <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/Materialize.png"
+                          alt="" class="Img-Lenguajes"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-12   ">
+                    <div class="row ">
+                      <div class="col-12 text-center">
+                        <h6>Marcos de estilo en Bootstrap.</h6>
+                      </div>
+                      <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/Boostrap.png"
+                          alt="" class="Img-Lenguajes"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="layout_padding3 border-bottom shadow-lg mt-4 br-20 ">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="image-box-title">Desktop</h3>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-12   "></div>
+                  <div class="col-lg-4 col-md-4 col-12   ">
+                    <div class="row ">
+                      <div class="col-12 text-center">
+                        <h6>Desarrollor de software con C#.</h6>
+                      </div>
+                      <div class="col-12 d-flex justify-content-center p-4"> <img src="IMAGE/Lenguajes/C.png" alt=""
+                          class="Img-Lenguajes"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12   ">
+                    <div class="row ">
+                      <div class="col-12 text-center ">
+                        <h6>Base de datos MySql o Sql Server </h6>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-center p-4"><img
+                            src="IMAGE/Lenguajes/sql.png" alt="" class="Img-Lenguajes"></div>
+                        <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-center p-4"><img
+                            src="IMAGE/Lenguajes/MySQL-Logo.png" alt="" class="Img-Lenguajes"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -425,6 +470,138 @@
       </div>
     </section>
     <!-- FIN SECCION QUE OFRECEMOS -->
+
+<div class="containes-fluid layout_padding2 banner-Clientes">
+  <div class="container     ">
+    <h2 class="Cliente-title">Nuestros Clientes</h2>
+    <div class=" swiper-container swiper-container-initialized swiper-container-horizontal p-4" dir="ltr">
+      <div class="elementor-image-carousel swiper-wrapper" aria-live="off"
+        style="transform: translate3d(-2108px, 0px, 0px); transition-duration: 0ms;">
+
+        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" role="group"
+          aria-roledescription="slide" aria-label="6 de 9" data-swiper-slide-index="5"
+          style="width: 213.5px; margin-right: 50px;" aria-hidden="true" inert="">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevoClinica.png" alt="logoscuadrados-03">
+          </figure>
+        </div>
+        <div class="swiper-slide swiper-slide-duplicate" role="group" aria-roledescription="slide" aria-label="7 de 9"
+          data-swiper-slide-index="6" style="width: 213.5px; margin-right: 50px;" aria-hidden="true" inert="">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro "
+              src="IMAGE/Clientes/LogoNuevo2.png" alt="BN VITAL"></figure>
+        </div>
+        <div class="swiper-slide swiper-slide-duplicate" role="group" aria-roledescription="slide" aria-label="8 de 9"
+          data-swiper-slide-index="7" style="width: 213.5px; margin-right: 50px;" aria-hidden="true" inert="">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevoClinica.png" alt="BN VALORES"></figure>
+        </div>
+        <div class="swiper-slide swiper-slide-duplicate" role="group" aria-roledescription="slide" aria-label="9 de 9"
+          data-swiper-slide-index="8" style="width: 213.5px; margin-right: 50px;" aria-hidden="true" inert="">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevo2.png" alt="logoscuadrados-07">
+          </figure>
+        </div>
+        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 9"
+          data-swiper-slide-index="0" style="width: 213.5px; margin-right: 50px;" aria-hidden="true" inert="">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevoClinica.png" alt="logoscuadrados-12">
+          </figure>
+        </div>
+        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 9"
+          data-swiper-slide-index="1" style="width: 213.5px; margin-right: 50px;" aria-hidden="true" inert="">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevo2.png" alt="logoscuadrados-11">
+          </figure>
+        </div>
+        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 9"
+          data-swiper-slide-index="2" style="width: 213.5px; margin-right: 50px;" aria-hidden="true" inert="">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevoClinica.png" alt="logoscuadrados-06">
+          </figure>
+        </div>
+        <div class="swiper-slide swiper-slide-prev" role="group" aria-roledescription="slide" aria-label="4 de 9"
+          data-swiper-slide-index="3" style="width: 213.5px; margin-right: 50px;" aria-hidden="true" inert="">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevo2.png" alt="logoscuadrados-09">
+          </figure>
+        </div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-roledescription="slide" aria-label="5 de 9"
+          data-swiper-slide-index="4" style="width: 213.5px; margin-right: 50px;">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevoClinica.png" alt="logoscuadrados-10">
+          </figure>
+        </div>
+        <div class="swiper-slide swiper-slide-next" role="group" aria-roledescription="slide" aria-label="6 de 9"
+          data-swiper-slide-index="5" style="width: 213.5px; margin-right: 50px;">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevo2.png" alt="logoscuadrados-03">
+          </figure>
+        </div>
+        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 de 9"
+          data-swiper-slide-index="6" style="width: 213.5px; margin-right: 50px;">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevoClinica.png" alt="BN VITAL"></figure>
+        </div>
+        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 de 9"
+          data-swiper-slide-index="7" style="width: 213.5px; margin-right: 50px;">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevo2.png" alt="BN VALORES"></figure>
+        </div>
+        <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 de 9"
+          data-swiper-slide-index="8" style="width: 213.5px; margin-right: 50px;" aria-hidden="true" inert="">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevoClinica.png" alt="logoscuadrados-07">
+          </figure>
+        </div>
+        <div class="swiper-slide swiper-slide-duplicate" role="group" aria-roledescription="slide" aria-label="1 de 9"
+          data-swiper-slide-index="0" style="width: 213.5px; margin-right: 50px;" aria-hidden="true" inert="">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevo2.png" alt="logoscuadrados-12">
+          </figure>
+        </div>
+        <div class="swiper-slide swiper-slide-duplicate" role="group" aria-roledescription="slide" aria-label="2 de 9"
+          data-swiper-slide-index="1" style="width: 213.5px; margin-right: 50px;" aria-hidden="true" inert="">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevoClinica.png" alt="logoscuadrados-11">
+          </figure>
+        </div>
+        <div class="swiper-slide swiper-slide-duplicate" role="group" aria-roledescription="slide" aria-label="3 de 9"
+          data-swiper-slide-index="2" style="width: 213.5px; margin-right: 50px;" aria-hidden="true" inert="">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevo2.png" alt="logoscuadrados-06">
+          </figure>
+        </div>
+        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" role="group"
+          aria-roledescription="slide" aria-label="4 de 9" data-swiper-slide-index="3"
+          style="width: 213.5px; margin-right: 50px;" aria-hidden="true" inert="">
+          <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image FondoOscuro"
+              src="IMAGE/Clientes/LogoNuevoClinica.png" alt="logoscuadrados-09">
+          </figure>
+        </div>
+      </div>
+      
+
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"  style="color: #ffffff;">
+        <span class="swiper-pagination-bullett" data-bullet-index="0" aria-label="Go to slide 1" role="button"></span>
+        <span class="swiper-pagination-bullett" data-bullet-index="1" aria-label="Go to slide 2" role="button"></span>
+        <span class="swiper-pagination-bullett" data-bullet-index="2" aria-label="Go to slide 3" role="button"></span>
+        <span  class="swiper-pagination-bullett" data-bullet-index="3" aria-label="Go to slide 4" role="button"></span>
+        <span class="swiper-pagination-bullett" data-bullet-index="4"  aria-label="Go to slide 5" role="button" tabindex="0"></span>
+        <span class="swiper-pagination-bullett" data-bullet-index="5" aria-label="Go to slide 6" role="button"></span>
+        <span class="swiper-pagination-bullett" data-bullet-index="6" aria-label="Go to slide 7" role="button"></span>
+        <span class="swiper-pagination-bullett" data-bullet-index="7" aria-label="Go to slide 8" role="button"></span>
+        <span class="swiper-pagination-bullett" data-bullet-index="8" aria-label="Go to slide 9" role="button"></span>
+      </div>
+      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+  </div>
+</div>
+    
+
+
+
+
+
 
     <!-- SECCION DEL FLOATING ACTION BUTTON -->
     <section>
@@ -457,7 +634,15 @@
       </div>
     </section>
     <!-- SECCION DEL FLOATING ACTION BUTTON  -->
-
+    <div class="loader-overlay">
+      <div class="loader">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+    </div>
   </main>
   <!--  End of main section  -->
 
@@ -497,6 +682,7 @@
       </div>
     </div>
   </section>
+
   <!--===========================================================================================-->
 
   <!-- Area designated for footer section -->
@@ -585,11 +771,12 @@
   <!--  End of footer section  -->
 
   <!--===========================================================================================-->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="JS/Query.js"></script>
   <script src="https://kit.fontawesome.com/53c1f003df.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>
