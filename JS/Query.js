@@ -40,3 +40,17 @@ document.addEventListener('DOMContentLoaded', function () {
     $(".loader-overlay").fadeOut("slow");
   });
 
+  var check = document.querySelector(".check");
+  check.addEventListener("click", idioma);
+
+  function idioma() {
+    let id = check.checked;
+    if (id== true){
+      location.href = "Html/En/index.html";
+    }
+    else {
+     window.location.href = "../../index.html";
+    }
+    console.log(id);
+
+  }
