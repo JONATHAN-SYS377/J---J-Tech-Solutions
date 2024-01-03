@@ -62,6 +62,69 @@ a {
 }
 
 /* ===================================================== HEADER ==================================================== */
+.elementor-item{
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    fill: #A100B9;
+    flex: 1 1 auto;
+    flex-grow: 1;
+    list-style-type: none;
+    padding: 13px 20px;
+    place-items: center normal;
+    position: relative;
+    transition-duration: 0.4s;
+    border-bottom: 2px solid transparent; /* Añade un borde transparente por defecto */
+}
+
+.elementor-item:hover {
+    border-bottom: 2px solid #A100B9; /* Cambia el color y estilo del borde al hacer hover */
+}
+.es{
+    color: green ;
+}
+.en{
+    color: blue;
+}
+.check{
+    position: relative;
+    width: 40px;
+    margin-left: 2px;
+    margin-right: 8px;
+     
+}
+.check::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    background: #fff;
+    border-radius: 28px;
+}
+.check::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    background: white;
+    border-radius: 25px;
+    transition: 0.2s;
+    border: 8px solid green;
+    box-sizing: border-box;
+    margin-top: -1px;
+}
+.check:checked::after{
+    left: 15px;
+    border: 8px solid blue;
+    
+
+}
+.check:checked::before{
+    color: blue;
+   
+
+}
 .Navbar-Section {
     background: linear-gradient(to left, #081831, #081831, #060F20, #000000, #000000);
     position: fixed;
@@ -191,11 +254,13 @@ a {
 }
 
 .m-r {
-    margin-right: 100px;
+    
+    margin-right: 5px;
 }
 
 .conteneddor_boton_carrito {
     margin-left: 80px;
+    margin-right: 20px;
 }
 
 .banner_section {
