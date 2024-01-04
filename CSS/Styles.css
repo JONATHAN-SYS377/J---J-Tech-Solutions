@@ -55,7 +55,12 @@
 :root {
     --bs-navbar-active-color: #A100B9
 }
-
+*{
+box-sizing: border-box;
+}
+section{
+    background-color: #F0F6FF
+}
 
 a {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -128,6 +133,65 @@ a {
    
 
 }
+
+.dropdown-menu {
+    --bs-dropdown-zindex: 1000;
+    --bs-dropdown-min-width: 10rem;
+    --bs-dropdown-padding-x: 0;
+    --bs-dropdown-padding-y: 0.5rem;
+    --bs-dropdown-spacer: 0.125rem;
+    --bs-dropdown-font-size: 1rem;
+    --bs-dropdown-color: #fff;
+       background: linear-gradient(to left, #081831, #081831, #060F20, #000000, #000000);
+    --bs-dropdown-bg: var(--bs-body-bg);
+    --bs-dropdown-border-color: var(--bs-border-color-translucent);
+    --bs-dropdown-border-radius: var(--bs-border-radius);
+    --bs-dropdown-border-width: var(--bs-border-width);
+    --bs-dropdown-inner-border-radius: calc(var(--bs-border-radius) - var(--bs-border-width));
+    --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
+    --bs-dropdown-divider-margin-y: 0.5rem;
+    --bs-dropdown-box-shadow: var(--bs-box-shadow);
+    --bs-dropdown-link-color: #ffffff;
+    --bs-dropdown-link-hover-color: #A100B9;
+    --bs-dropdown-link-hover-bg: linear-gradient(to left, #081831, #081831, #060F20, #000000, #000000);
+    --bs-dropdown-link-active-color: #040404;
+    --bs-dropdown-link-active-bg: #0d6efd;
+    --bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
+    --bs-dropdown-item-padding-x: 1rem;
+    --bs-dropdown-item-padding-y: 0.25rem;
+    --bs-dropdown-header-color: #6c757d;
+    --bs-dropdown-header-padding-x: 1rem;
+    --bs-dropdown-header-padding-y: 0.5rem;
+    position: absolute;
+    z-index: var(--bs-dropdown-zindex);
+    display: none;
+    min-width: var(--bs-dropdown-min-width);
+    padding: var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);
+    margin: 0;
+    font-size: var(--bs-dropdown-font-size);
+    color: linear-gradient(to left, #081831, #081831, #060F20, #000000, #000000);
+    text-align: left;
+    list-style: none;
+    background-color: linear-gradient(to left, #081831, #081831, #060F20, #000000, #000000);
+    background-clip: padding-box;
+    border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
+    border-radius: var(--bs-dropdown-border-radius);
+    font-weight: 600;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+    clear: both;
+    font-weight: 600;
+    color: linear-gradient(to left, #081831, #081831, #060F20, #000000, #000000);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-radius: var(--bs-dropdown-item-border-radius,0);
+}
 .Navbar-Section {
     background: linear-gradient(to left, #081831, #081831, #060F20, #000000, #000000);
     position: fixed;
@@ -167,7 +231,7 @@ a {
     background-image: url(../IMAGE/Carrusel/vecteezy_blue-abstract-technology-hitech-backgroundcircuit_8952080.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    min-height: 88vh;
+    min-height: 65vh;
 }
 
 /* header{
@@ -288,7 +352,7 @@ a {
 
 .text_banner {
     width: 100%;
-    font-size: 17px;
+    font-size: 30px;
     color: #ffffff;
     padding-left: 20px;
     margin: 15px 15px;
@@ -335,7 +399,8 @@ a {
 
 .ImagenCarrucel {
     width: 100%;
-    height: 80%;
+    height: 90%;
+    padding: 10px;
 }
 
 .ImagenCarrucel2 {
@@ -515,15 +580,14 @@ a {
     }
 }
 
-@media only screen and (min-width: 599px) and (max-width: 1024px) {
-    .sizeName {
-        display: none;
-    }
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    
 
     .carousel {
         margin-top: 60px;
         height: 350px;
         min-height: 100%;
+       
     }
 
     .banner_Titulo {
@@ -600,7 +664,172 @@ a {
         margin-left: 18px;
     }
 }
+@media only screen and (min-width:1025px) and (max-width:1370px){
+     
 
+    .carousel1 {
+        margin-top: 60px;
+        height: 500px;
+        min-height: 88vh;
+    }
+
+    .banner_Titulo {
+        font-size: 45px;
+        padding-top: 10px;
+    }
+
+    .espacio {
+        padding-right: 0rem !important;
+        padding-left: 1rem !important;
+    }
+
+    .espacio-4 {
+        padding: 0rem !important;
+    }
+
+    .margin-1 {
+        margin-top: 0rem !important;
+    }
+
+    .espacio-2 {
+        padding: 0rem !important;
+    }
+
+    .espacio-top {
+        padding-top: 0px;
+    }
+
+    .margin-top-1 {
+        margin-top: 0rem !important;
+    }
+
+    .margin-top-3 {
+        margin-top: 5.5rem !important;
+    }
+
+    .margin-top-5 {
+        margin-top: 2rem !important;
+    }
+
+    .text_banner {
+        width: 100%;
+        font-size: 20px;
+        color: #ffffff;
+        padding-left: 85px;
+        padding-right: 20px;
+        margin: 5px 0px;
+    }
+
+    .ads_bt {
+        width: 40%;
+        float: left;
+        height: 50px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .ImagenCarrucel {
+        width: 100%;
+        height: 90%;
+    }
+
+    .ImagenCarrucel2 {
+        margin-top: 0px;
+        width: 90%;
+        height: 90%;
+        margin-left: 18px;
+    }
+
+    .ImagenCarrucel3 {
+        margin-top: 30px;
+        width: 85%;
+        height: 89%;
+        margin-left: 40px;
+    }
+}
+@media only screen and (min-width: 1371px) and (max-width: 2000px) {
+     
+
+    .carousel1 {
+        margin-top: 70px;
+        height: 350px;
+        min-height: 88vh;
+    }
+
+    .banner_Titulo {
+        font-size: 45px;
+        padding-top: 10px;
+    }
+
+    .espacio {
+        padding-right: 0rem !important;
+        padding-left: 1rem !important;
+    }
+
+    .espacio-4 {
+        padding: 0rem !important;
+    }
+
+    .margin-1 {
+        margin-top: 0rem !important;
+    }
+
+    .espacio-2 {
+        padding: 0rem !important;
+    }
+
+    .espacio-top {
+        padding-top: 0px;
+    }
+
+    .margin-top-1 {
+        margin-top: 0rem !important;
+    }
+
+    .margin-top-3 {
+        margin-top: 6.5rem !important;
+    }
+
+    .margin-top-5 {
+        margin-top: 2rem !important;
+    }
+
+    .text_banner {
+        width: 100%;
+        font-size: 25px;
+        color: #ffffff;
+        padding-left: 85px;
+        padding-right: 20px;
+        margin: 5px 0px;
+    }
+
+    .ads_bt {
+        width: 40%;
+        float: left;
+        height: 50px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .ImagenCarrucel {
+        width: 100%;
+        height: 80%;
+    }
+
+    .ImagenCarrucel2 {
+        margin-top: 0px;
+        width: 90%;
+        height: 80%;
+        margin-left: 18px;
+    }
+
+    .ImagenCarrucel3 {
+        margin-top: 40px;
+        width: 85%;
+        height: 89%;
+        margin-left: 40px;
+    }
+}
 /* =================================== CUERPO ==================================================== */
 .about_section {
     width: 100%;
@@ -749,6 +978,8 @@ a {
     background-position: center center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    
+    
 
 }
 .br-20{
@@ -781,8 +1012,8 @@ a {
 .header_section {
     margin-top: 75px;
     width: 100%;
-    height: 450px;
-
+    height: auto;
+    
     background-image: url(../IMAGE/Header-html/vecteezy_blue-abstract.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -795,10 +1026,11 @@ a {
     background-repeat: no-repeat;
 }
 
+
 .Imgbanner {
     margin-top: 40px;
     width: 100%;
-    height: 105%;
+    height: 100%;
 }
 .banner-Clientes{
     z-index: -1;
@@ -919,7 +1151,107 @@ a {
     width: 100%;
     margin-top: -20px;
 }
+.centrar-p{
+    text-align: center;
+    margin-top: 25%;
+}
 
+.title-table {
+    background: #A100B9;
+	color: white;
+    font-size: 20px;
+	font-weight: 700;
+    box-shadow: rgba(42, 67, 113, 0.3) 8px 8px 18px 0px;
+	box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 5% ;
+    margin-left: 5%;
+    padding: 2px 5px;
+    text-align: center;
+}
+.img-desarrollo{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+        
+}
+.img-desarrollo2{
+    width: 100%;
+    height: 180px;
+    margin-bottom: 15px; 
+}
+.efecto-hover {
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+    background-color: white;
+}
+.efecto-hover:hover{
+    transform: translateY(-10px);
+}
+.details {
+    margin-top: 5px;
+    padding: 6px 20px 15px 20px;
+
+    line-height: 25px;
+    text-align: center;
+    list-style: none;
+}
+.button-slide {
+    width: 200px;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+    margin-top: -25px;
+    background: linear-gradient(to right, #D71E95, #A100B9, #BA04AC);
+    transition: background 0.3s ease;
+}
+
+.button-slide::before {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #D71E95, #A100B9, #BA04AC);
+    transition: left 0.3s ease;
+}
+
+.button-slide:hover::before {
+    left: 0;
+}
+
+.button-slide:hover {
+    background: linear-gradient(to left, #D71E95, #A100B9, #BA04AC);
+    color: #fff;
+}
+.img-banner-contact{
+    margin-top: 27%;
+    width: 100%;
+    height: 100px;
+}
+
+.trabajos{
+    padding: 50px 0 150px 0;
+}
+.swiper{
+    width: 100%;
+}
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    
+}
+.swiper-slide img{
+    display: block;
+    width: 100%;
+     
+}
 
 @media only screen and (min-width: 280px) and (max-width: 599px) {
     .change-to-order1{
@@ -928,15 +1260,21 @@ a {
     .header_section {
         margin-top: 70px;
         width: 100%;
-        height: 250px;
+        height: auto;
     }
+    .centrar-p{
+        padding-top: 20px;
+    }
+<<<<<<< HEAD
     .change-to-order2{
         order: 2;
     }
+=======
+>>>>>>> main
     .Imgbanner {
         margin-top: 45px;
         width: 100%;
-        height: 90%;
+        height: 80%;
     }
 
     .ImagenCarrucelTienda {
@@ -964,19 +1302,28 @@ a {
     .carousel-cliente{
         margin: 0px 60px;
     }
+    .img-banner-contact{
+        margin-top: 10%;
+        width: 100%;
+        height: 80px;
+    }
 }
 
-@media only screen and (min-width: 599px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
     .header_section {
         margin-top: 75px;
         width: 100%;
-        height: 300px;
+        height: 350px;
     }
-
+    .centrar-p{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
     .Imgbanner {
-        margin-top: 48px;
+        margin-top: 70px;
         width: 100%;
-        height: 90%;
+        height: 65%;
     }
 
     .ImagenCarrucelTienda {
@@ -1001,6 +1348,74 @@ a {
         width: 100%;
     }
 }
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+    .header_section {
+        margin-top: 75px;
+        width: 100%;
+        height: 350px;
+    }
+    .centrar-p{
+        padding-top: 30px;
+        font-size: 17px;
+    }
+    .Imgbanner {
+        margin-top: 20px;
+        width: 100%;
+        height: 90%;
+    }
+
+    .carousel2 {
+        margin-top: 75px;
+        width: 100%;
+        height: 350px;
+        background-image: url(../IMAGE/Header-html/vecteezy_blue-abstract.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+    }
+
+    .ImagenCarrucelTienda {
+        height: 400px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 1367px) and (max-width: 2000px) {
+    .header_section {
+        margin-top: 75px;
+        width: 100%;
+        height: 350px;
+    }
+    .centrar-p{
+        padding-top: 0px;
+        font-size: 19px;
+    }
+    .Imgbanner {
+        margin-top: 0px;
+        width: 100%;
+        height: 90%;
+    }
+
+    .carousel2 {
+        margin-top: 75px;
+        width: 100%;
+        height: 350px;
+        background-image: url(../IMAGE/Header-html/vecteezy_blue-abstract.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+    }
+
+    .ImagenCarrucelTienda {
+        height: 400px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 /* *********************************************************
   Loader
@@ -1250,53 +1665,27 @@ a {
         margin-right: auto;
     }
 } */
-@media only screen and (min-width: 1367px) and (max-width: 2000px) {
-    .header_section {
-        margin-top: 75px;
-        width: 100%;
-        height: 350px;
-    }
 
-    .Imgbanner {
-        margin-top: 48px;
-        width: 100%;
-        height: 90%;
-    }
 
-    .carousel2 {
-        margin-top: 75px;
-        width: 100%;
-        height: 350px;
-        background-image: url(../IMAGE/Header-html/vecteezy_blue-abstract.jpg);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
 
-    }
 
-    .ImagenCarrucelTienda {
-        height: 400px;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footerr{
+    width: 100%;
+    height: 360px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .home-footer {
     background: linear-gradient(to left, #081831, #081831, #060F20, #000000, #000000);
