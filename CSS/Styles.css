@@ -1008,16 +1008,25 @@ a {
     
 }
 
+.margen-top-header{
+    margin-top: 75px;
+}
 
 .header_section {
     margin-top: 75px;
     width: 100%;
     height: auto;
-    
+    color: #fff;
     background-image: url(../IMAGE/Header-html/vecteezy_blue-abstract.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
+}
+.header_section2{
+    margin-top: 75px;
+    width: 100%;
+    height: auto;
+    color: #000000;
 }
 .header_subIndex{
     margin-top: 75px;
@@ -1028,7 +1037,10 @@ a {
 .header_subIndex .row{
     background-color: white !important;
 }
-
+.bg 
+{
+    background-color: white !important;
+}
 
 .Imgbanner {
     margin-top: 40px;
@@ -1155,8 +1167,8 @@ a {
     margin-top: -20px;
 }
 .centrar-p{
-    text-align: center;
-    margin-top: 25%;
+    
+    margin-top: 5%;
 }
 
 .title-table {
@@ -1268,12 +1280,6 @@ a {
     .centrar-p{
         padding-top: 20px;
     }
-<<<<<<< HEAD
-    .change-to-order2{
-        order: 2;
-    }
-=======
->>>>>>> main
     .Imgbanner {
         margin-top: 45px;
         width: 100%;
@@ -1358,7 +1364,7 @@ a {
         height: 350px;
     }
     .centrar-p{
-        padding-top: 30px;
+        padding-top: 5px;
         font-size: 17px;
     }
     .Imgbanner {
@@ -1683,11 +1689,31 @@ a {
 
 
 
-
+.curveDownColor {
+    margin-bottom: -100px;
+}
+.curveUpColor{
+    margin-top: -100px;
+    transform: rotate(180deg);
+    padding-bottom: 50px;
+}
+.curveUpColor, .curveDownColor {
+    fill: #F0F6FF;
+    stroke: #F0F6FF;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+.pt-51
+    {
+        padding-top: 6rem!important;
+    }
 
 .footerr{
     width: 100%;
     height: 360px;
+    
+     
 }
 
 .home-footer {
