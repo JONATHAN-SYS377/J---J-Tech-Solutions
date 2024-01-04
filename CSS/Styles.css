@@ -774,6 +774,12 @@ a {
     background-repeat: no-repeat;
 
 }
+.header_subIndex{
+    margin-top: 75px;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
 .Imgbanner {
     margin-top: 40px;
