@@ -1267,7 +1267,31 @@ a {
     width: 100%;
      
 }
-
+.pt-6{
+    padding-top: 4.3rem !important;
+}
+.pr-3{
+    padding-right: 10px;
+}
+.infocontacto{
+    background-image: linear-gradient(145deg, #A100B9 0%, #BA04AC 100%);
+	border-radius: 15px;
+	box-shadow: #a000b9b9 8px 8px 20px 0px;
+	box-sizing: border-box;
+	padding: 60px;
+	position: relative;
+	transition-delay: 0s, 0s, 0s, 0s;
+	transition-duration: 0.3s, 0.3s, 0.3s, 0.3s;
+	transition-property: background, border, border-radius, box-shadow;
+	transition-timing-function: ease, ease, ease, ease;
+	z-index: 0;
+}
+.pd-form-5{
+    padding: 30px;
+}
+.pd-form-2{
+    padding: 30px;
+}
 @media only screen and (min-width: 280px) and (max-width: 599px) {
     .change-to-order1{
         order: 1;
@@ -1315,6 +1339,17 @@ a {
         margin-top: 10%;
         width: 100%;
         height: 80px;
+    }
+    .image-box-title {
+
+        font-size: 45px;
+
+    }
+    .pd-form-5{
+        padding: 0px;
+    }
+    .pd-form-2{
+        padding: 10px;
     }
 }
 
