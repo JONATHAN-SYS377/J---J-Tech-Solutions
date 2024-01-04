@@ -54,3 +54,25 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(id);
 
   }
+//   function mostrarAnchoVentana() {
+//     const anchoVentana = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+//     console.log('Ancho de la ventana: ' + anchoVentana + 'px');
+// }
+
+// // Llama a la función al cargar la página y cada vez que cambia el tamaño de la ventana
+// window.addEventListener('load', mostrarAnchoVentana);
+// window.addEventListener('resize', mostrarAnchoVentana);
+var swiper = new Swiper(".myswiper",{
+  effect :"coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate:15,
+    strech:0,
+    depth:300,
+    modifer:1,
+    slideShadow:true,
+  },
+  loop: true,
+});
