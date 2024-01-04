@@ -82,6 +82,9 @@ a {
     transition-duration: 0.4s;
     border-bottom: 2px solid transparent; /* Añade un borde transparente por defecto */
 }
+.rose-text{
+    color: #A100B9;
+}
 
 .elementor-item:hover {
     border-bottom: 2px solid #A100B9; /* Cambia el color y estilo del borde al hacer hover */
@@ -934,6 +937,17 @@ a {
     text-align: center;
     word-wrap: break-word;
 }
+.subindex-title{
+    box-sizing: border-box;
+    color: #090E36;
+    font-family: Montserrat, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0px 0px 20px;
+    text-align: center;
+    word-wrap: break-word;
+}
 
 .box-img-lenguaje {
     border: 1px solid black;
@@ -1004,6 +1018,15 @@ a {
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
+}
+.header_subIndex{
+    margin-top: 75px;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.header_subIndex .row{
+    background-color: white !important;
 }
 
 
@@ -1234,6 +1257,9 @@ a {
 }
 
 @media only screen and (min-width: 280px) and (max-width: 599px) {
+    .change-to-order1{
+        order: 1;
+    }
     .header_section {
         margin-top: 70px;
         width: 100%;
@@ -1242,6 +1268,12 @@ a {
     .centrar-p{
         padding-top: 20px;
     }
+<<<<<<< HEAD
+    .change-to-order2{
+        order: 2;
+    }
+=======
+>>>>>>> main
     .Imgbanner {
         margin-top: 45px;
         width: 100%;
