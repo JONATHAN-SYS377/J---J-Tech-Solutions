@@ -1236,14 +1236,21 @@ a {
 }
 
 .standar-rounded-button{
+    padding: 10px 20px;
     color: #fff;
+    border: none;
+    cursor: pointer;
     position: relative;
-    top: 0;
-
-    width: 100%;
-    height: 100%;
+    overflow: hidden;
     background: linear-gradient(to right, #D71E95, #A100B9, #BA04AC);
-    transition: left 0.3s ease;
+    transition: background 0.3s ease;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 18px;
+}
+.standar-rounded-button:hover{
+    background: linear-gradient(to left, #D71E95, #A100B9, #BA04AC);
+    color: #fff;
 }
 
 .button-slide:hover::before {
