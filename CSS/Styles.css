@@ -1028,6 +1028,17 @@ a {
     height: auto;
     color: #000000;
 }
+.header_section3 {
+    margin-top: 75px;
+    width: 100%;
+    height: 250px;
+    color: #fff;
+    background-image: url(../IMAGE/Header-html/vecteezy_blue-abstract2.png);
+    background-size:  100% 100% ;
+    background-repeat: no-repeat;
+     
+   
+}
 .header_subIndex{
     margin-top: 75px;
     width: 100%;
@@ -1292,6 +1303,24 @@ a {
 .pd-form-2{
     padding: 30px;
 }
+.acerca-de{
+    margin-top: 130px;
+    float: left;
+    font-size: 50px; 
+}
+.imagen-nosotros{
+    padding: 0px 20px 10px 10px;
+    width: 80%;
+}
+.texto-nosotros{
+    padding: 50px 30px;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
 @media only screen and (min-width: 280px) and (max-width: 599px) {
     .change-to-order1{
         order: 1;
@@ -1351,13 +1380,108 @@ a {
     .pd-form-2{
         padding: 10px;
     }
+    .header_section3 {
+        margin-top: 75px;
+        width: 100%;
+        height: 200px;
+        color: #fff;
+        background-image: url(../IMAGE/Header-html/vecteezy_blue-abstract2.png);
+        background-size:  100% 100% ;
+        background-repeat: no-repeat;
+    
+    }
+    .acerca-de{
+        margin-top: 30px;
+         text-align: center;
+        font-size: 35px; 
+    }
+    .imagen-nosotros{
+        padding: 0px;
+        width: 90%;
+    }
+    .texto-nosotros{
+        padding: 10px 30px;
+    }
+    .float-left{
+        float: left;
+    }
+    .float-right{
+        float: right;
+    }
+    .orden{
+        order: 1;
+    }
 }
-
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 850px){
     .header_section {
         margin-top: 75px;
         width: 100%;
-        height: 350px;
+        height: auto;
+    }
+    .centrar-p{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
+    .Imgbanner {
+        margin-top: 70px;
+        width: 100%;
+        height: 55%;
+    }
+
+    .ImagenCarrucelTienda {
+        height: 220px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about_text {
+        width: 88%;
+        float: right;
+        font-size: 45px;
+        color: #090807;
+        font-weight: 500;
+        text-align: right;
+        border-bottom: 1px solid #000;
+    }
+
+    .Nombre-about {
+        margin-top: -30px;
+        width: 100%;
+    }
+    .header_section3 {
+        margin-top: 75px;
+        height: 200px;
+        background-size:  100% 100% ;
+         
+    
+    }
+    .acerca-de{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px; 
+    }
+    .imagen-nosotros{
+        padding: 0px;
+        width: 90%;
+    }
+    .texto-nosotros{
+        padding: 10px 30px;
+    }
+    .float-left{
+        float: left;
+    }
+    .float-right{
+        float: right;
+    }
+   
+}
+@media only screen and (min-width: 851px) and (max-width: 1024px) {
+    .header_section {
+        margin-top: 75px;
+        width: 100%;
+        height: auto;
     }
     .centrar-p{
         padding-top: 20px;
@@ -1391,6 +1515,26 @@ a {
         margin-top: -30px;
         width: 100%;
     }
+    .header_section3 {
+        margin-top: 75px;
+        height: 250px;
+        background-size:  100% 100% ;
+    
+    }
+    .acerca-de{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px; 
+    }
+    .imagen-nosotros{
+        padding: 0px;
+        width: 90%;
+    }
+    .texto-nosotros{
+        padding: 10px 30px;
+    }
+    
+   
 }
 @media only screen and (min-width: 1025px) and (max-width: 1366px) {
     .header_section {
@@ -1423,6 +1567,11 @@ a {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .acerca-de{
+        margin-top: 130px;
+    text-align: center;
+    font-size: 35px; 
     }
 }
 
