@@ -273,6 +273,7 @@ li a:hover{
     opacity: 70%;
     position: relative;
     right: 4px;
+    padding-top: 6px;
 }
 
 .logo {
@@ -1260,6 +1261,24 @@ li a:hover{
     height: 100%;
     background: linear-gradient(to right, #D71E95, #A100B9, #BA04AC);
     transition: left 0.3s ease;
+}
+
+.standar-rounded-button{
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #D71E95, #A100B9, #BA04AC);
+    transition: background 0.3s ease;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 18px;
+}
+.standar-rounded-button:hover{
+    background: linear-gradient(to left, #D71E95, #A100B9, #BA04AC);
+    color: #fff;
 }
 
 .button-slide:hover::before {
