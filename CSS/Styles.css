@@ -62,10 +62,27 @@ section{
     background-color: #F0F6FF
 }
 
-a {
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+a, div, span{
+    font-family: Montserrat, sans-serif;
 }
+a:hover{
+    
+}
+p{
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+}
+h1 , h2, h3, h4, h5, h6{
+    font-family: Montserrat, sans-serif;
+ 
+}
+ul, li {
+    font-family: Montserrat, sans-serif;
 
+}
+li a:hover{
+    color: #A100B9;
+}
 /* ===================================================== HEADER ==================================================== */
 .elementor-item{
     align-items: center;
@@ -1016,10 +1033,7 @@ a {
     margin-top: 75px;
     width: 100%;
     height: auto;
-    color: #fff;
-    background-image: url(../IMAGE/Header-html/vecteezy_blue-abstract.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    color: #000000;
 
 }
 .header_section2{
@@ -1044,9 +1058,11 @@ a {
     width: 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    box-shadow: 2px 2px 2px #000;
 }
 .header_subIndex .row{
     background-color: white !important;
+    box-shadow: 4px 3px 9px 6px #00000014;
 }
 .bg 
 {
@@ -1263,20 +1279,46 @@ a {
 .trabajos{
     padding: 50px 0 150px 0;
 }
-.swiper{
+ .swiper{
     width: 100%;
+    padding: 10px 0 10px 0 ;
 }
+
 .swiper-slide{
-    background-position: center;
-    background-size: cover;
-    width: 250px;
+    width: 90%;
+    height: 500px;
+    
+    padding: 20px;
+}
+/* .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.icons i {
+    font-size: 20px;
+    color: #ffb900;
+}
+.icons img {
+    width: 220px;
+} */
+
+.product-content {
+    flex-basis: 100%;
     
 }
-.swiper-slide img{
-    display: block;
-    width: 100%;
-     
+
+.product-img {
+    flex-basis: 100%;
+    
 }
+.product-img img {
+width: 100%;
+ 
+ 
+}
+
 .pt-6{
     padding-top: 4.3rem !important;
 }
@@ -1303,13 +1345,18 @@ a {
     padding: 30px;
 }
 .acerca-de{
-    margin-top: 130px;
-    float: left;
-    font-size: 50px; 
+    
+    
+    font-size: 70px; 
 }
 .imagen-nosotros{
     padding: 0px 20px 10px 10px;
     width: 80%;
+}
+.imagen-nosotros2{
+    width: 100% !important;
+    padding: 0px 20px 10px 10px;
+    margin-top: 110px;
 }
 .texto-nosotros{
     padding: 50px 30px;
@@ -1396,11 +1443,17 @@ a {
     }
     .imagen-nosotros{
         padding: 0px;
-        width: 90%;
+        width: 100%;
     }
     .texto-nosotros{
         padding: 10px 30px;
     }
+    .imagen-nosotros2{
+        width: 100% !important;
+        padding: 0px;
+        margin-top: 0px;
+    }
+ 
     .float-left{
         float: left;
     }
@@ -1913,8 +1966,7 @@ a {
 }
 
 .text-Enlaces:hover {
-    color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
-    ;
+    color: #A100B9
 }
 
 .sizeNamefooter {
