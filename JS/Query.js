@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     else {
      window.location.href = "../../index.html";
     }
-    console.log(id);
+    
 
   }
 //   function mostrarAnchoVentana() {

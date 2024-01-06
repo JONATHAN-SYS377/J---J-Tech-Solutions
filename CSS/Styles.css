@@ -1057,6 +1057,7 @@ li a:hover{
 .header_subIndex{
     margin-top: 75px;
     width: 100%;
+    
     background-size: 100% 100%;
     background-repeat: no-repeat;
     box-shadow: 2px 2px 2px #000;
@@ -1074,6 +1075,11 @@ li a:hover{
     margin-top: 40px;
     width: 100%;
     height: 100%;
+}
+.Imgbanner2 {
+    margin-top: 15px;
+    width: 100%;
+     
 }
 .banner-Clientes{
     z-index: -1;
@@ -1268,13 +1274,14 @@ li a:hover{
     color: #fff;
     border: none;
     cursor: pointer;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     background: linear-gradient(to right, #D71E95, #A100B9, #BA04AC);
     transition: background 0.3s ease;
     border-radius: 1rem;
     font-weight: 700;
     font-size: 18px;
+    margin-top: -25px;
 }
 .standar-rounded-button:hover{
     background: linear-gradient(to left, #D71E95, #A100B9, #BA04AC);
@@ -1386,9 +1393,18 @@ width: 100%;
 .float-right{
     float: right;
 }
+.margin-top-menos{
+    margin-top: -80px;
+}
 @media only screen and (min-width: 280px) and (max-width: 599px) {
     .change-to-order1{
         order: 1;
+    }
+    .orden-4{
+        order: 3;
+    }
+    .margin-top-menos{
+        margin-top:0px;
     }
     .header_section {
         margin-top: 70px;
@@ -1403,7 +1419,11 @@ width: 100%;
         width: 100%;
         height: 80%;
     }
-
+    .Imgbanner2 {
+        margin-top: 5px;
+        width: 100%;
+        height: 80%;
+    }
     .ImagenCarrucelTienda {
         height: 250px;
         width: 95%;
@@ -1489,17 +1509,25 @@ width: 100%;
         width: 100%;
         height: auto;
     }
+    
     .centrar-p{
         padding-top: 20px;
         padding-bottom: 20px;
         
+    }
+    .margin-top-menos{
+        margin-top: -10px;
     }
     .Imgbanner {
         margin-top: 70px;
         width: 100%;
         height: 55%;
     }
-
+    .Imgbanner2 {
+        margin-top: 25px;
+        width: 100%;
+        height: 55%;
+    }
     .ImagenCarrucelTienda {
         height: 220px;
         width: 50%;
@@ -1564,7 +1592,9 @@ width: 100%;
         width: 100%;
         height: 65%;
     }
-
+    .margin-top-menos{
+        margin-top: -5px;
+    }
     .ImagenCarrucelTienda {
         height: 220px;
         width: 50%;
@@ -1622,7 +1652,9 @@ width: 100%;
         width: 100%;
         height: 90%;
     }
-
+    .margin-top-menos{
+        margin-top: -95px;
+    }
     .carousel2 {
         margin-top: 75px;
         width: 100%;
@@ -1661,7 +1693,9 @@ width: 100%;
         width: 100%;
         height: 90%;
     }
-
+    .margin-top-menos{
+        margin-top: -180px;
+    }
     .carousel2 {
         margin-top: 75px;
         width: 100%;
