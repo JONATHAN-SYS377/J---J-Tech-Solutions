@@ -1352,16 +1352,12 @@ width: 100%;
     padding-right: 10px;
 }
 .infocontacto{
-    background-image: linear-gradient(145deg, #A100B9 0%, #BA04AC 100%);
-	border-radius: 15px;
-	box-shadow: #a000b9b9 8px 8px 20px 0px;
+
 	box-sizing: border-box;
-	padding: 60px;
+	padding: 37px 50px;
 	position: relative;
-	transition-delay: 0s, 0s, 0s, 0s;
-	transition-duration: 0.3s, 0.3s, 0.3s, 0.3s;
-	transition-property: background, border, border-radius, box-shadow;
-	transition-timing-function: ease, ease, ease, ease;
+
+    
 	z-index: 0;
 }
 .pd-form-5{
