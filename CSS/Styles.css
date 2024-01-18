@@ -1216,8 +1216,28 @@ li a:hover{
     margin-top: 10px;
     margin-right: 5% ;
     margin-left: 5%;
-    padding: 2px 5px;
+    padding: 10px 5px;
     text-align: center;
+}
+.title-Personalizacion-Web{
+    background-color: #04acbc; 
+    border-radius: 10px; 
+     
+    padding-top: 7px; 
+    width: 80%; 
+    margin: auto;
+    color: white !important;
+}
+.ot-heading h6, .ot-heading .sub-heading {
+    font-size: 14px;
+    font-weight: bold;
+    color: #a5b7d2;
+    position: relative;
+    display: inline-block;
+    padding-left: 21px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 .img-desarrollo{
     width: 100%;
@@ -1245,6 +1265,18 @@ li a:hover{
     line-height: 25px;
     text-align: center;
     list-style: none;
+}
+.details2 {
+    margin-top: 5px;
+    padding: 6px 20px 15px 20px;
+
+    line-height: 25px;
+     list-style-type: none;
+    list-style: none;
+    margin-right: -8px;
+    margin-left: -8px;
+    display: block;
+    flex-wrap: wrap;
 }
 .button-slide {
     padding: 10px 20px;
