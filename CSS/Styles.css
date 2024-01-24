@@ -504,7 +504,8 @@ li a:hover{
 
 @media only screen and (min-width: 280px) and (max-width: 599px) {
     .sizeName {
-        display: none;
+        width: 180px;
+        height: 35px;
     }
 
     .carousel {
@@ -955,6 +956,17 @@ li a:hover{
     text-align: center;
     word-wrap: break-word;
 }
+.image-box-title2 {
+    box-sizing: border-box;
+    color: #090E36;
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 66px;
+    margin: 0px 0px 20px;
+    text-align: center;
+    word-wrap: break-word;
+}
 .subindex-title{
     box-sizing: border-box;
     color: #090E36;
@@ -1269,10 +1281,9 @@ li a:hover{
 }
 .details2 {
     margin-top: 5px;
-    padding: 6px 20px 15px 20px;
-
+    padding: 6px 20px 15px 100px;
     line-height: 25px;
-     list-style-type: none;
+    list-style-type: none;
     list-style: none;
     margin-right: -8px;
     margin-left: -8px;
