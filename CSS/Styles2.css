@@ -52,7 +52,7 @@
     --bs-form-invalid-color: #ea868f;
     --bs-form-invalid-border-color: #ea868f;
   } */
-:root {
+  :root {
     --bs-navbar-active-color: #A100B9
 }
 *{
@@ -1794,7 +1794,7 @@ width: 100%;
     border-radius: 3px;
     opacity: 0;
     width: 25px;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 0.3s;
     -webkit-animation-fill-mode: both;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-name: subtleIn;
