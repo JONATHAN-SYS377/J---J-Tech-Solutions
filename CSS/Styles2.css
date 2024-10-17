@@ -289,8 +289,8 @@ li a:hover{
 }
 
 .sizeName {
-    width: 250px;
-    height: 40px;
+    width: 150px;
+    height: 60px;
 }
 
 .nav-link {
@@ -505,10 +505,10 @@ li a:hover{
 
 @media only screen and (min-width: 280px) and (max-width: 599px) {
     .sizeName {
-        width: 180px;
-        height: 35px;
+        width: 130px;
+        height: 40px;
     }
-
+ 
     .carousel {
         /* background-image: url(/IMAGE/Carrusel/vecteezy_blue-abstract-technology-hitech-backgroundcircuit_8952080.jpg); */
         margin-top: 45px;
@@ -2087,8 +2087,10 @@ width: 100%;
 }
 
 .sizeNamefooter {
-    width: 250px;
-    height: 40px;
+    width: 180px;
+    height: 70px;
+    margin-left: -100px;
+    margin-top: -20px;
 }
 
 .bxl-whatsapp .bxl-instagram .bxl-facebook {
